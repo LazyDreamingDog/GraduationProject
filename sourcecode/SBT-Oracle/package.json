@@ -1,0 +1,23 @@
+{
+  "name": "sbt-oracle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.3",
+    "@solvprotocol/erc-3525": "^1.3.0",
+    "axios": "^1.3.6",
+    "bn.js": "^5.2.1",
+    "ganache-cli": "^6.12.2",
+    "web3": "^1.9.0"
+  }
+}
