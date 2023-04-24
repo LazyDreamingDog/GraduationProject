@@ -1,7 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
-import "./SBT.sol";
+import "./SbtGenContract.sol";
+import "./SbtVerifyContract.sol";
 
 contract IdemixOracle {
     uint private randNonce = 0;
@@ -45,7 +46,7 @@ contract IdemixOracle {
     ) public {
         require(pendingRequests[_requestId],"This request is not in my pending list.");
         delete pendingRequests[_requestId];
-        SBT(_callerAddress).tokenURI_Res(tokenId_, revealAttr, unReavealAttr, nymCred, _requestId);
+        SbtGenContract(_callerAddress).tokenURI_Res(tokenId_, revealAttr, unReavealAttr, nymCred);
         emit SetCredGenOKEvent(tokenId_, _callerAddress);
     }
 
@@ -70,7 +71,7 @@ contract IdemixOracle {
     ) public {
         require(pendingRequests[_requestId],"This request is not in my pending list.");
         delete pendingRequests[_requestId];
-        SBT(_callerAddress).tokenVer_Res(tokenId_, verRes_, _requestId);
+        SbtVerifyContract(_callerAddress).tokenVer_Res(tokenId_, verRes_);
         emit SetCredVerOKEvent(tokenId_, _callerAddress);
     }
 

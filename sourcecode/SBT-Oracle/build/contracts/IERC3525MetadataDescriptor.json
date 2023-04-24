@@ -1,0 +1,349 @@
+{
+  "contractName": "IERC3525MetadataDescriptor",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "constructContractURI",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "slot",
+          "type": "uint256"
+        }
+      ],
+      "name": "constructSlotURI",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "constructTokenURI",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"constructContractURI\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"slot\",\"type\":\"uint256\"}],\"name\":\"constructSlotURI\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"constructTokenURI\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"@solvprotocol/erc-3525/periphery/interface/IERC3525MetadataDescriptor.sol\":\"IERC3525MetadataDescriptor\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@solvprotocol/erc-3525/periphery/interface/IERC3525MetadataDescriptor.sol\":{\"keccak256\":\"0xc297d848cece83ff6d6d67e6f884667425445776b3b5c8fd185c4a01a2f79de7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a498945e761792cbf32be30eb8f512b214260a55b56e325c2611e8caa23978bf\",\"dweb:/ipfs/QmZBr8aqYyyErUqHdGDhyZXyj4RUk2G1fsLfRtwdEC1Wf3\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity ^0.8.0;\n\ninterface IERC3525MetadataDescriptor {\n\n    function constructContractURI() external view returns (string memory);\n\n    function constructSlotURI(uint256 slot) external view returns (string memory);\n    \n    function constructTokenURI(uint256 tokenId) external view returns (string memory);\n\n}",
+  "sourcePath": "@solvprotocol/erc-3525/periphery/interface/IERC3525MetadataDescriptor.sol",
+  "ast": {
+    "absolutePath": "@solvprotocol/erc-3525/periphery/interface/IERC3525MetadataDescriptor.sol",
+    "exportedSymbols": {
+      "IERC3525MetadataDescriptor": [
+        4029
+      ]
+    },
+    "id": 4030,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4009,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:15"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IERC3525MetadataDescriptor",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 4029,
+        "linearizedBaseContracts": [
+          4029
+        ],
+        "name": "IERC3525MetadataDescriptor",
+        "nameLocation": "68:26:15",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "725fa09c",
+            "id": 4014,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "constructContractURI",
+            "nameLocation": "111:20:15",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4010,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "131:2:15"
+            },
+            "returnParameters": {
+              "id": 4013,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4012,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4014,
+                  "src": "157:13:15",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4011,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "157:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "156:15:15"
+            },
+            "scope": 4029,
+            "src": "102:70:15",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "6c037f8a",
+            "id": 4021,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "constructSlotURI",
+            "nameLocation": "187:16:15",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4017,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4016,
+                  "mutability": "mutable",
+                  "name": "slot",
+                  "nameLocation": "212:4:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4021,
+                  "src": "204:12:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 4015,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "204:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "203:14:15"
+            },
+            "returnParameters": {
+              "id": 4020,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4019,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4021,
+                  "src": "241:13:15",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4018,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "241:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "240:15:15"
+            },
+            "scope": 4029,
+            "src": "178:78:15",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "894b4c2e",
+            "id": 4028,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "constructTokenURI",
+            "nameLocation": "275:17:15",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4024,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4023,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nameLocation": "301:7:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4028,
+                  "src": "293:15:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 4022,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "293:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "292:17:15"
+            },
+            "returnParameters": {
+              "id": 4027,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4026,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4028,
+                  "src": "333:13:15",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4025,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "333:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "332:15:15"
+            },
+            "scope": 4029,
+            "src": "266:82:15",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 4030,
+        "src": "58:293:15",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:318:15"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.9+commit.e5eed63a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.13",
+  "updatedAt": "2023-04-24T02:27:01.387Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
